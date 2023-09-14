@@ -1,0 +1,93 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "about.html#why-is-python-so-popular",
+    "href": "about.html#why-is-python-so-popular",
+    "title": "About",
+    "section": "Why is Python so popular?",
+    "text": "Why is Python so popular?\n\nPython VS Rstudio\n\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfig, ax = plt.subplots(\n  subplot_kw = {'projection': 'polar'} \n)\nax.plot(theta, r)\nax.set_rticks([0.5, 1, 1.5, 2])\nax.grid(True)\nplt.show()\n\n\n\n\nFigure 1: A line plot on a polar axis"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "simple_quarto_website",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  },
+  {
+    "objectID": "index.html#permutations-and-combinations",
+    "href": "index.html#permutations-and-combinations",
+    "title": "simple_quarto_website",
+    "section": "Permutations and Combinations",
+    "text": "Permutations and Combinations\n\nComparison Between Permutation and Combination\n\n\n\nPermutations\n\n\nCombinations\n\n\n\n\n\nThe number of ways that n elements can be arranged in order\nIn permutation, every different ordering counts as a distinct permutation. For instance, the ordering (a,b,c,d) is distinct from (a,b,d,c).\nOrder of arrangement matters in permutation.\n\n\n\nIn combination, every different ordering does NOT count as a distinct combination. For instance, the ordering (a,b,c,d) is the same as the ordering (a,b,d,c). Order does not matter in combination.\n\n\n\n\n\nPermutation Formula\n\\[\nP(n,k) = \\frac{n!}{(n-k)!}\\\n\\]\n\n\nCombination Formula\n\\[\nC(n,k) = {n \\choose k} = \\frac{n!}{k!(n-k)!}\\\n\\]"
+  },
+  {
+    "objectID": "index.html#permutation-example",
+    "href": "index.html#permutation-example",
+    "title": "simple_quarto_website",
+    "section": "Permutation Example",
+    "text": "Permutation Example\n\nSuppose 3 people are atteding a meeting and there are five chairs. How many such distinct sittings are possible?\n\n\\(P(5,3) = \\frac{5!}{2!} = 5 \\times 4 \\times 3 = 120\\)\n\nSuppose we need to know the number of possibilities for a four-digit lock.\n\n\\(P(10,4) = \\frac{10!}{4!} = 10 \\times 9 \\times 8 \\times 7= 5040\\)"
+  },
+  {
+    "objectID": "index.html#combination-example",
+    "href": "index.html#combination-example",
+    "title": "simple_quarto_website",
+    "section": "Combination Example",
+    "text": "Combination Example\n\nWe wish to form committees of 3 people from a total of 5 people. How many such distinct committees are possible?\n\n\\(C(5,3) = {5 \\choose 3} = \\frac{5!}{3!2!} = \\frac{5 \\times 4 \\times 3 \\times 2 \\times 1}{3 \\times 2 \\times 1 \\times 2 \\times 1} = 5 \\times 2 = 10\\)\n\nSuppose we have 10 pizza toppings, and we’re picking 4 of them (without repetitions).1\n\n\\(C(10,4) = {10 \\choose 4} = \\frac{10!}{4!6!} = \\frac{10 \\times 9 \\times 8 \\times 7 \\times 6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1}{4 \\times 3 \\times 2 \\times 1 \\times 6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1} = 210\\)"
+  },
+  {
+    "objectID": "index.html#permutation-and-combination-with-and-without-repetition",
+    "href": "index.html#permutation-and-combination-with-and-without-repetition",
+    "title": "simple_quarto_website",
+    "section": "Permutation and Combination with and without repetition",
+    "text": "Permutation and Combination with and without repetition\n\n\n\nWith Repetition2\nWithout Repetition\n\n\n\n\n\\(n^r\\)\n\\(\\frac{n!}{(n-k)!}\\)\n\n\n\\(\\frac{r+n-1}{r! \\times (n-1)!}\\)\n\\(\\frac{n!}{k!(n-k)!}\\ \\)\n\n\n\nTo have a better understanding of the formulas and examples related to permutation and combination with repetitions: https://www.qualitygurus.com/permutations-and-combination/\n\n\n\n  \n\n\n\n\n\n\n\n\nflowchart LR\n    A[Probability] --&gt; B(Permutation and Combination)\n    B --&gt; C{Permutation}\n    B --&gt; D{Combination}\n    C --&gt; E[Permutation with Repeats]\n    C --&gt; F[Permutation without Repeats]\n    D --&gt; H[Combination with Repeats]\n    D --&gt; I[Combination without Repeats]\n\n\n\n\n\n\nAdd References\nsee (Makinde 2014) see (Frost 2023)"
+  },
+  {
+    "objectID": "index.html#footnotes",
+    "href": "index.html#footnotes",
+    "title": "simple_quarto_website",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nIn the examples provided above, we did not repeat an element in any arrangement, as people cannot be chosen twice and the same toppings cannot be added twice for the pizzas. Thus we used the general formula to solve the problems.↩︎\nFor instance, if you are to arrange three elements, a,b,c, in order, the possible permutations are abc, bac, bca, cab, cba. However, if we repeat elements, then we will have many more arrangements such as aaa, aab, aba, abb etc, and this is why we use the formula n r.↩︎"
+  },
+  {
+    "objectID": "slides/slides.html#comparison-between-permutation-and-combination",
+    "href": "slides/slides.html#comparison-between-permutation-and-combination",
+    "title": "Permutation and Combination",
+    "section": "Comparison Between Permutation and Combination",
+    "text": "Comparison Between Permutation and Combination\n\n\n\nPermutations\n\n\nCombinations\n\n\n\n\n\n\\(\\frac{r+n-1}{r! \\times (n-1)!}\\)\nOrder of arrangement matters in permutation.\n\n\n\n\\(\\frac{n!}{k!(n-k)!}\\ \\) Order does not matter in combination.\n\n\n\n\n\n\n\n\n\nPermutations\n\n\n\n\n\n\n\nCombinations"
+  },
+  {
+    "objectID": "slides/slides.html#permutation-example",
+    "href": "slides/slides.html#permutation-example",
+    "title": "Permutation and Combination",
+    "section": "Permutation Example",
+    "text": "Permutation Example\n\nSuppose 3 people are atteding a meeting and there are five chairs. How many such distinct sittings are possible?\n\n\\(P(5,3) = \\frac{5!}{2!} = 5 \\times 4 \\times 3 = 120\\)\n\nSuppose we need to know the number of possibilities for a four-digit lock.\n\n\\(P(10,4) = \\frac{10!}{4!} = 10 \\times 9 \\times 8 \\times 7= 5040\\)"
+  },
+  {
+    "objectID": "slides/slides.html#combination-example",
+    "href": "slides/slides.html#combination-example",
+    "title": "Permutation and Combination",
+    "section": "Combination Example",
+    "text": "Combination Example\n\nWe wish to form committees of 3 people from a total of 5 people. How many such distinct committees are possible?\n\\(C(5,3) = {5 \\choose 3} = \\frac{5!}{3!2!} = \\frac{5 \\times 4 \\times 3 \\times 2 \\times 1}{3 \\times 2 \\times 1 \\times 2 \\times 1} = 5 \\times 2 = 10\\)\nSuppose we have 10 pizza toppings, and we’re picking 4 of them (without repetitions).[^1]\n\n\\(C(10,4) = {10 \\choose 4} = \\frac{10!}{4!6!} = \\frac{10 \\times 9 \\times 8 \\times 7 \\times 6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1}{4 \\times 3 \\times 2 \\times 1 \\times 6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1} = 210\\)"
+  },
+  {
+    "objectID": "slides/slides.html#python-code",
+    "href": "slides/slides.html#python-code",
+    "title": "Permutation and Combination",
+    "section": "Python code",
+    "text": "Python code\n#| label: fig-polar\n#| fig-cap: A line plot on a polar axis\n\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfig, ax = plt.subplots(\n  subplot_kw = {'projection': 'polar'} \n)\nax.plot(theta, r)\nax.set_rticks([0.5, 1, 1.5, 2])\nax.grid(True)\nplt.show()"
+  },
+  {
+    "objectID": "slides/slides.html#references",
+    "href": "slides/slides.html#references",
+    "title": "Permutation and Combination",
+    "section": "References",
+    "text": "References\nsee (Makinde 2014) see (Frost 2023)\n\n\n\n\n\n\nFrost, Jim. 2023. “Permutation Vs Combination: Differences &Amp; Examples.” Statistics By Jim. https://statisticsbyjim.com/probability/permutation-vs-combination/.\n\n\nMakinde, Deborah Olufunmilayo. 2014. “Teaching Permutation and Combination Using Play-Way Method.” Journal of Education and Practice 5 (28): 209–11."
+  }
+]
